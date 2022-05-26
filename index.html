@@ -2,6 +2,44 @@
 <html lang="pt-br">
 
 <head>
+    <style>
+        body {
+            background-color: rgba(15, 15, 15, 0.705);
+            width: 600px;
+            height: 500px;
+            font-family: 'Courier New', Courier, monospace;
+            color: white;
+            margin: 0px;
+        }
+        
+        #net {
+            color: red;
+            font-size: 40px;
+            margin-left: 25px;
+            margin-top: 10px;
+        }
+        
+        .containe {
+            display: block;
+            width: 400px;
+            height: 600px;
+            background-color: rgba(15, 13, 13, 0.966);
+            margin: auto;
+        }
+        
+        input email,
+        senha,
+        button {
+            width: 400px;
+            height: 300px;
+            padding: auto;
+        }
+        
+        label {
+            display: block;
+            padding-top: 15px;
+        }
+    </style>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +47,22 @@
 </head>
 
 <body>
+    <div id="net">NETLIX</div>
+    <div class="containe">
+        <p>ENTRAR</p>
+        <form action="neteflix.html">
+            <label for="email">digite seu email</label>
+            <input type="email" required>
+            <label for="senha">digite sua senha</label>
+            <input type="password" value="senha" required>
+            <input type="button" value="entrar">
+            <label for="lembra_senha">Lembri-se de mim</label>
+            <input type="checkbox" value="lenbra_senha ">
 
+
+        </form>
+
+    </div>
 </body>
 
 </html>
